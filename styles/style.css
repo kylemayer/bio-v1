@@ -10,10 +10,11 @@ body {
 
 main {
     display: grid;  
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr 2fr .5fr 1fr 1fr 1fr;
     margin: 30px;
     padding: 30px;
     width: 1000px;
+    gap: 5px;
 
 }
 
@@ -30,7 +31,6 @@ main {
 .name {
     font-weight: 600;
     font-size: 2em;
-    margin-bottom: 5px;
 }
 
 .title {
@@ -42,7 +42,7 @@ main {
     display: grid;
     align-items: end;
     justify-items: end;
-    align-items: center;
+    align-items: start;
 }
 
 .v-btn {
@@ -67,32 +67,121 @@ main {
     padding-right: 15px;
 }
 
-#logo {
-    width: 140x;
-    height: 140px;
-    margin: auto;
-}
-
-
-.ape {
-    font-size: 10em;
-    position: relative;
-    margin: auto;
-}
-
-.links {
-    width: 35px;
-    height: 35px;
+.about-port {
     display: grid;
-    grid-template-rows: 1fr 1fr 3fr 1fr;
-    position: relative;
-    margin: auto;
-    text-decoration: none;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 15px;
+}
+
+.about {
+    color: white;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    color: white;
+}
+
+.port-btn {
+    color: blue;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.row3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+
+}
+
+.email {
+    display: grid;
+    padding: 15px;
+    justify-content: center;
+    border: solid 1px black;
+}
+
+.github {
+    display: grid;
+    padding: 15px;
+    justify-content: center;
+    border: solid 1px black;
+}
+
+.writing {
+    display: grid;
+    padding: 15px;
+    justify-content: center;
+    border: solid 1px black;
+}
+
+.row4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.linkedin {
+    display: grid;
+    padding: 15px;
+    justify-content: center;
+    border: solid 1px black;
+}
+
+.twitter {
+    display: grid;
+    padding: 15px;
+    justify-content: center;
+    border: solid 1px black;
+}
+
+.discord {
+    display: grid;
+    padding: 15px;
+    justify-content: center;
+    border: solid 1px black;
+}
+.other {
+    display: grid;
+    padding: 15px;
+    justify-content: center;
+    border: solid 1px black;
+}
+.row5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.interests {
+    display: grid;
+    padding: 15px;
+    justify-content: center;
+    border: solid 1px black;
+}
+
+.resources {
+    display: grid;
+    padding: 15px;
+    justify-content: center;
+    border: solid 1px black;
 }
 
 .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.alchemy {
+    display: grid;
+    padding: 15px;
+    justify-content: center; 
+}
+
+.vercel {
+    display: grid;
+    padding: 15px;
+    justify-content: center;
 }
