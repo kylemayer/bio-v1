@@ -1,13 +1,12 @@
 html {
     min-height: 100%;
-    
 }
 
 body {
     font-family: 'Sora', sans-serif;
     display: grid;
     justify-content: center;
-    background-image: url('./assets/cartographer.png');    
+    background-color: rgb(255, 255, 255);    
 }
 
 main {
