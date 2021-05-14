@@ -1,0 +1,27 @@
+body {
+    font-family: 'Sora', sans-serif;
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+}
+
+.ape {
+    display: grid;    
+    font-size: 10em;
+    position: relative;
+    margin: auto;
+}
+
+.home {
+    position: relative;
+    margin: auto;
+    font-weight: 100;
+    display: grid;
+}
+
+a {
+    color: blueviolet;
+    font-size: .1em;
+    text-decoration: none;
+}

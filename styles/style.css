@@ -1,11 +1,13 @@
 html {
-    background-color: rgb(111, 126, 172);
+    min-height: 100%;
+    
 }
 
 body {
     font-family: 'Sora', sans-serif;
     display: grid;
     justify-content: center;
+    background-image: url('./assets/cartographer.png');    
 }
 
 main {
@@ -15,7 +17,6 @@ main {
     padding: 30px;
     width: 1000px;
     gap: 5px;
-
 }
 
 .header {
@@ -31,7 +32,25 @@ main {
 .name {
     font-weight: 600;
     font-size: 2em;
-}
+        background: linear-gradient(to right, rgb(3, 4, 94),rgb(0, 180, 216),rgb(202, 240, 248));  
+        background-size: 200% 200%;
+        animation: rainbow 2s ease-in-out infinite;
+        background-clip: text;
+        -webkit-background-clip:text;
+        color:rgba(0,0,0,1);
+        transition: color .2s ease-in-out;
+    }
+
+    .name:hover{
+        color:rgba(0,0,0,0);
+    }
+    @keyframes rainbow { 
+        0%{background-position:left}
+        50%{background-position:right}
+        100%{background-position:left}
+    }
+
+
 
 .title {
     font-weight: 300;
@@ -46,25 +65,21 @@ main {
 }
 
 .v-btn {
-    font-size: 1em;
-    border: solid 2px rgb(0, 0, 0);
-    border-radius: 15px;
-    background-color: rgb(73, 83, 114);
-    color: white;
+    background: linear-gradient(to right, rgb(0, 119, 182),rgb(0, 180, 216),rgb(144, 224, 239));  
+    background-size: 200% 200%;
+    animation: rainbow 4s ease-in-out infinite;
+    color:rgba(0,0,0,1);
+    transition: color .2s ease-in-out;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    color: black;
     padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .v-btn:hover {
-    font-size: 1em;
-    border: solid 2px rgb(0, 0, 0);
-    border-radius: 15px;
-    background-color: rgb(45, 85, 204);
-    color: white;
-    padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+   
 }
 
 .about-port {
@@ -102,21 +117,23 @@ main {
     display: grid;
     padding: 15px;
     justify-content: center;
-    border: solid 1px black;
+    align-items: center;
+
+
 }
 
 .github {
     display: grid;
     padding: 15px;
     justify-content: center;
-    border: solid 1px black;
+    align-items: center;
 }
 
 .writing {
     display: grid;
     padding: 15px;
     justify-content: center;
-    border: solid 1px black;
+    align-items: center;
 }
 
 .row4 {
@@ -128,27 +145,32 @@ main {
     display: grid;
     padding: 15px;
     justify-content: center;
-    border: solid 1px black;
+    align-items: center;
+    
+    
 }
 
 .twitter {
     display: grid;
     padding: 15px;
     justify-content: center;
-    border: solid 1px black;
+    align-items: center;
+   
 }
 
 .discord {
     display: grid;
     padding: 15px;
     justify-content: center;
-    border: solid 1px black;
+    align-items: center;
+ 
 }
 .other {
     display: grid;
     padding: 15px;
     justify-content: center;
-    border: solid 1px black;
+    align-items: center;
+    
 }
 .row5 {
     display: grid;
@@ -159,14 +181,16 @@ main {
     display: grid;
     padding: 15px;
     justify-content: center;
-    border: solid 1px black;
+    align-items: center;
+
 }
 
 .resources {
     display: grid;
     padding: 15px;
     justify-content: center;
-    border: solid 1px black;
+    align-items: center;
+
 }
 
 .footer {
@@ -176,12 +200,47 @@ main {
 
 .alchemy {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     padding: 15px;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center;
 }
 
 .vercel {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     padding: 15px;
     justify-content: center;
+    align-items: center;
+}
+
+.vercel-left {
+    display: grid;
+    align-items: end;
+    justify-content: end;
+}
+
+.vercel-right {
+    display: grid;
+    align-items: start;
+
+}
+
+.alchemy-left {
+    display: grid;
+    align-items: end;
+    justify-content: end;
+}
+
+.alchemy-right {
+    display: grid;
+    align-items: start;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
